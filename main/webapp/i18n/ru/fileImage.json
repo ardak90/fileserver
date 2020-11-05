@@ -1,0 +1,25 @@
+{
+  "filestorageApp": {
+    "fileImage": {
+      "home": {
+        "title": "File Images",
+        "createLabel": "Создать новый File Image",
+        "createOrEditLabel": "Создать или отредактировать File Image",
+        "notFound": "No File Image found"
+      },
+      "created": "Новый File Image создан с идентификатором {{ param }}",
+      "updated": "File Image обновлен с идентификатором {{ param }}",
+      "deleted": "File Image удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить File Image {{ id }}?"
+      },
+      "detail": {
+        "title": "File Image"
+      },
+      "imagePath": "Image Path",
+      "expiryDate": "Expiry Date",
+      "size": "Size",
+      "mimeType": "Mime Type"
+    }
+  }
+}

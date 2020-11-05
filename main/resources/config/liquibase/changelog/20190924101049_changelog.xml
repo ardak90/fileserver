@@ -1,0 +1,14 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="syr (generated)" id="1569319857837-3">
+        <addColumn tableName="deffective_product">
+            <column name="current_user" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="syr (generated)" id="1569319857837-4">
+        <dropForeignKeyConstraint baseTableName="deffective_product" constraintName="FKe0t23rg7ouelwrfry452q5yx2"/>
+    </changeSet>
+    <changeSet author="syr (generated)" id="1569319857837-5">
+        <dropColumn columnName="user_id" tableName="deffective_product"/>
+    </changeSet>
+</databaseChangeLog>

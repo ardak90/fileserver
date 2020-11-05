@@ -1,0 +1,25 @@
+{
+  "filestorageApp": {
+    "deffectiveProduct": {
+      "home": {
+        "title": "Deffective Products",
+        "createLabel": "Создать новый Deffective Product",
+        "createOrEditLabel": "Создать или отредактировать Deffective Product",
+        "notFound": "No Deffective Product found"
+      },
+      "created": "Новый Deffective Product создан с идентификатором {{ param }}",
+      "updated": "Deffective Product обновлен с идентификатором {{ param }}",
+      "deleted": "Deffective Product удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Deffective Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Deffective Product"
+      },
+      "inventoryNumber": "Inventory Number",
+      "description": "Description",
+      "user": "User",
+      "fileImage": "File Image"
+    }
+  }
+}

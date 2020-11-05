@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="root (generated)" id="1567650937353-3">
+        <createTable tableName="deffective_product">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="deffective_productPK"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="serial_number" type="VARCHAR(255)"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1567650937353-4">
+        <createTable tableName="file_image">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="file_imagePK"/>
+            </column>
+            <column name="expiry_date" type="date"/>
+            <column name="mime_type" type="VARCHAR(255)"/>
+            <column name="size" type="VARCHAR(255)"/>
+            <column name="uuid" type="VARCHAR(255)"/>
+            <column name="deffective_product_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1567650937353-5">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="deffective_product" constraintName="FKe0t23rg7ouelwrfry452q5yx2" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1567650937353-6">
+        <addForeignKeyConstraint baseColumnNames="deffective_product_id" baseTableName="file_image" constraintName="FKnx3vcyy9tgxalj0qtbxseeoih" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="deffective_product" validate="true"/>
+    </changeSet>
+</databaseChangeLog>
